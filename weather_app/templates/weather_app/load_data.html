@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load</title>
+</head>
+<body>
+<div>
+<h1>{{ name }}</h1>
+Wprowadź plik z danymi
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" placeholder="plik" name="weather_data">
+    <button type="submit" value="upload">OK</button>
+</form>
+</div>
+</body>
+</html>
